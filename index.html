@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#009578">
+    <title>Havayolu Bilet Rezervasyonu</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="worldwide.png">
+</head>
+<body>
+    <div class="main">
+        <h1 class="head">Havayolu Bilet Rezervasyon Sistemi</h1>
+        <div class="navigation">
+          <ul>
+            <li><a href="index.html" id="onlink">ANASAYFA</a></li>
+            <li><a href="meal.html">YEMEKLER</a></li>
+            <li><a href="holiday.html">TATİL PAKETLERİ</a></li>
+          </ul>
+        </div>
+    
+        <div class="booking">
+          <section>
+            <h2 class="head1">Rezervasyonunuzu</h2>
+            <h2 class="head2">Buradan</h2>
+            <h2 class="head3">Yapın</h2>
+            <form style="margin-top: 70px !important;">
+              <ul>
+                <b class="fsize">Nereden&emsp;<input type="text" placeholder="Nereden"></b> <br> <br>
+                <b class="fsize">Nereye&emsp;<input type="text" placeholder="Nereye"></b> <br> <br>
+                <b class="fsize">Tarih&emsp;<input type="Date" placeholder="gg-aa-yyyy"></b> <br> <br>
+                <label class="fsize"><strong>Sınıf</strong></label>
+                <select id="class" name="class">
+                  <option value="select">SEÇİN</option>
+                  <option value="1AC">1AC</option>
+                  <option value="2AC">2AC</option>
+                  <option value="3AC">3AC</option>
+                  <option value="Sleeper">Yatakhane</option>
+                  <option value="Chair">Koltuk</option>
+                </select>
+              </ul>
+            </form>
+            <button class="submit" type="button" style="margin-top: 30px; background:lightpink;" onclick="trainB()">Trenleri
+              Bul</button>
+            <div class="form-popup" id="bookTrain">
+              <div class="popup">
+                <h1>Talebiniz alınmıştır.</h1> <br>
+                <h2>Biletiniz onaylandığında mail ve sms yoluyla bildireceğiz.</h2>
+                <button type="button" class="hide" onclick="trainC()">Kapat</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <img class="img" src="home.jpg" alt="ucak" width="500" height="350" style="text-align: center" />
+        <h1 class="holiday">TATİLLER</h1>
+        <img class="imgs" src="taj.jpg" alt="Tac Mahal" />
+        <img class="imgs" src="temple.jpg" alt="Altın Tapu" />
+        <img class="imgs" src="tower.jpg" alt="Eyfel Kulesi" />
+      </div>
+      <script src="main.js"></script>
+      <script src="index.js"></script>
+</body>
+</html>

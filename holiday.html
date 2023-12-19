@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Havayolu Bilet Rezervasyonu</title>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <div class="main">
+            <h1 class="head">Havayolu Bilet Rezervasyon Sistemi</h1>
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">ANASAYFA</a></li>
+                    <li><a href="meal.html">YEMEKLER</a></li>
+                    <li><a href="holiday.html" id="onlink">TATİL PAKETLERİ</a></li>
+                </ul>
+            </div>
+            <h1 class="hpack">Tatil Paketleri</h1>
+            <div>
+                <img class="hpimg" src="hpack1.JPG" alt="tatilpaketi"/>
+                <button class="bookd" type="button" onclick="h1DB()">Detaylar</button>
+                <div class="form-popup" id="hBook1">
+                    <div class="popup">
+                        <h1>Antalya Otel</h1> <br>
+                        <h2>3 Gün Tatil</h2> <br>
+                        <h1>Fiyat - 29.100TL</h1>
+                        <button type="button" class="hide" onclick="h1DC()">Kapat</button>
+                    </div>
+                </div>
+                <button class="bookh" type="button" onclick="h1BB()">Rezervasyon</button>
+                <div class="form-popup" id="hBook2">
+                    <div class="popup"><br>
+                        Ad <input type="input" name="name"><br> <br>
+                        Yaş &nbsp;<input type="input" name="Age"><br><br>
+                        E-posta <input type="input" name="Email"><br><br>
+                        İletişim <input type="input" name="Contact"><br>
+                        <button type="button" class="hide" onclick="orderO()">Rezervasyon Yap</button>
+                        <button type="button" class="hide" onclick="h1BC()">Kapat</button>
+                        <div class="form-popup" id="openO">
+                            <div class="popup"><br>
+                                <h1>Rezervasyonunuz İçin Teşekkürler</h1><br>
+                                <h2>En kısa sürede sizinle iletişime geçeceğiz</h2>
+                                <button type="button" class="hide" onclick="orderC()">Kapat</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+              <img class="hpimg" src="hpack2.JPG" alt="tatilpaketi"/>
+              <button class="bookd" type="button" onclick="h2DB()">Detaylar</button>
+              <div class="form-popup" id="hBook3">
+                  <div class="popup">
+                      <h1>İnkum'da Tatil</h1> <br>
+                      <h2>2 Gün Tatil</h2> <br>
+                      <h1>Fiyat - 26.000TL</h1>
+                      <button type="button" class="hide" onclick="h2DC()">Kapat</button>
+                  </div>
+              </div>
+              <button class="bookh" type="button" onclick="h2BB()">Rezervasyon</button>
+              <div class="form-popup" id="hBook4">
+                  <div class="popup"> <br>
+                      Ad <input type="input" name="name"><br> <br>
+                      Yaş &nbsp;<input type="input" name="Age"><br><br>
+                      E-posta <input type="input" name="Email"><br><br>
+                      İletişim <input type="input" name="Contact"><br>
+                      <button type="button" class="hide" onclick="oO1()">Rezervasyon Yap</button>
+                      <button type="button" class="hide" onclick="h2BC()">Kapat</button>
+                      <div class="form-popup" id="o1">
+                          <div class="popup"><br>
+                              <h1>Rezervasyonunuz İçin Teşekkürler</h1><br>
+                              <h2>En kısa sürede sizinle iletişime geçeceğiz</h2>
+                              <button type="button" class="hide" onclick="oC1()">Kapat</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Üçüncü Tatil Paketi -->
+          <div>
+              <img class="hpimg" src="hpack3.JPG" alt="tatilpaketi"/>
+              <button class="bookd" type="button" onclick="h3DB()">Detaylar</button>
+              <div class="form-popup" id="hBook5">
+                  <div class="popup">
+                      <h1>Didim'de Tatil</h1> <br>
+                      <h2>4 Gün Tatil</h2> <br>
+                      <h1>Fiyat - 36.000TL</h1>
+                      <button type="button" class="hide" onclick="h3DC()">Kapat</button>
+                  </div>
+              </div>
+              <button class="bookh" type="button" onclick="h3BB()">Rezervasyon</button>
+              <div class="form-popup" id="hBook6">
+                  <div class="popup"> <br>
+                      Ad <input type="input" name="name"><br> <br>
+                      Yaş &nbsp;<input type="input" name="Age"><br><br>
+                      E-posta <input type="input" name="Email"><br><br>
+                      İletişim <input type="input" name="Contact"><br>
+                      <button type="button" class="hide" onclick="oO2()">Rezervasyon Yap</button>
+                      <button type="button" class="hide" onclick="h3BC()">Kapat</button>
+                      <div class="form-popup" id="o2">
+                          <div class="popup"><br>
+                              <h1>Rezervasyonunuz İçin Teşekkürler</h1><br>
+                              <h2>En kısa sürede sizinle iletişime geçeceğiz</h2>
+                              <button type="button" class="hide" onclick="oC2()">Kapat</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
+
+
+        
+          
+          
+           
+          
+            
+
+            
+       

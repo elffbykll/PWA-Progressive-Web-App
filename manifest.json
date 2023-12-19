@@ -1,0 +1,55 @@
+{
+    "name" : "PWA ticket app",
+    "short_name" : "PWA ticket app",
+    "start_url" : ".",
+    "theme_color" : "#009578",
+    "display" : "standalone",
+    "icons" : [{
+        "src":"home.jpg",
+        "sizes": "1280x720",
+        "type": "image/png"
+    },
+    {
+        "src":"worldwide.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+    },
+    {
+        "src":"hpack1.JPG",
+        "sizes": "333x250",
+        "type": "image/png"
+    },
+    {
+        "src":"hpack2.JPG",
+        "sizes": "375x250",
+        "type": "image/png"
+    },
+    {
+        "src":"hpack3.JPG",
+        "sizes": "276x183",
+        "type": "image/png"
+    },
+    {
+        "src":"meal.JPG",
+        "sizes": "887x401",
+        "type": "image/png"
+    },
+    {
+        "src":"taj.jpg",
+        "sizes": "730x487",
+        "type": "image/png"
+    },
+    {
+        "src":"temple.jpg",
+        "sizes": "512x342",
+        "type": "image/png"
+    },
+    {
+        "src":"tower.jpg",
+        "sizes": "268x188",
+        "type": "image/png"
+    }
+],
+    "background_color": "#6dcdb1"
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Havayolu Bilet Rezervasyonu</title>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+
+    <body>
+        <!-- Sayfa başlığı ve ana bölüm -->
+        <div class="main">
+            <h1 class="head">Havayolu Bilet Rezervasyon Sistemi</h1>
+            <!-- Navigasyon menüsü -->
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">ANA SAYFA</a></li>
+                    <li><a href="meal.html" id="onlink">YEMEKLER</a></li>
+                    <li><a href="holiday.html">TATİL PAKETLERİ</a></li>
+                </ul>
+            </div>
+            <!-- Yemeklerin resmini gösteren bölüm -->
+            <img src="meal.JPG" alt="yemekler" width="850px" />
+            <!-- Yemekler tablosu -->
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="2"><h1>Yemekler</h1></th>
+                    </tr>
+                    <tr>
+                        <td class="meald">Balık Soslu Patates - 150₺</td>
+                        <td><button class="order" onclick="orderOpen()">Şimdi Sipariş Ver</button></td>
+                        <!-- Sipariş formu açılan popup -->
+                        <div class="form-popup" id="avi">
+                            <div class="popup">
+                                PNR Giriniz: <input type="input" name="PNR">
+                                <button type="button" class="hide" onclick="orderO()">Rezervasyon Yap</button>
+                                <button class="hide" onclick="orderClose()">Kapat</button>
+                                <!-- Rezervasyon onay popup'ı -->
+                                <div class="form-popup" id="openO">
+                                    <div class="popup">
+                                        <h1>Yemeğiniz Rezerve Edildi</h1>
+                                        <button type="button" class="hide" onclick="orderC()">Kapat</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td>Köri Soslu Tavuk - 200₺</td>
+                        <td><button class="order" type="button" onclick="orderOpen()">Şimdi Sipariş Ver</button></td>
+                        <div class="form-popup" id="avi">
+                            <div class="popup">
+                                PNR Giriniz: <input type="input" name="PNR">
+                                <button type="button" class="hide" onclick="orderO()">Rezervasyon Yap</button>
+                                <button class="hide" onclick="orderClose()">Kapat</button>
+                                <div class="form-popup" id="openO">
+                                    <div class="popup">
+                                        <h1>Yemeğiniz Rezerve Edildi</h1>
+                                        <button type="button" class="hide" onclick="orderC()">Kapat</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td>Bonfile - 350₺</td>
+                        <td><button class="order" type="button" onclick="orderOpen()">Şimdi Sipariş Ver</button></td>
+                        <div class="form-popup" id="avi">
+                            <div class="popup">
+                                PNR Giriniz: <input type="input" name="PNR">
+                                <button type="button" class="hide" onclick="orderO()">Rezervasyon Yap</button>
+                                <button class="hide" onclick="orderClose()">Kapat</button>
+                                <div class="form-popup" id="openO">
+                                    <div class="popup">
+                                        <h1>Yemeğiniz Rezerve Edildi</h1>
+                                        <button type="button" class="hide" onclick="orderC()">Kapat</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- JavaScript dosyasını dahil et -->
+        <script src="main.js"></script>
+    </body>
+</html>
